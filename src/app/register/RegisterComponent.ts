@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './register.html',
+  templateUrl: 'register.html',
 })
 
 export class RegisterComponent implements OnInit {
