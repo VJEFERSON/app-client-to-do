@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "client-to-do": {
+    "client-to-do-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client-to-do",
+            "outputPath": "dist/client-to-do-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "client-to-do:build"
+            "browserTarget": "client-to-do-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "client-to-do:build:production"
+              "browserTarget": "client-to-do-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "client-to-do:build"
+            "browserTarget": "client-to-do-app:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "client-to-do:serve"
+            "devServerTarget": "client-to-do-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "client-to-do:serve:production"
+              "devServerTarget": "client-to-do-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "client-to-do"
+  "defaultProject": "client-to-do-app"
 }
