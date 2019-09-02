@@ -1,5 +1,5 @@
 export interface EditTagDto {
     id: number;
-    title: string;
+    tag: string;
     description: string;
 }

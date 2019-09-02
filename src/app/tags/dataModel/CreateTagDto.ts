@@ -1,4 +1,4 @@
 export interface CreateTagDto {
-    title: string;
+    tag: string;
     description: string;
 }

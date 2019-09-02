@@ -23,6 +23,7 @@ import { CommonModule } from '@angular/common';
         MatSnackBarModule,
         MatSelectModule,
         MatPaginatorModule,
+        MatListModule,
     ],
     exports: [
         MatCardModule,
@@ -41,6 +42,7 @@ import { CommonModule } from '@angular/common';
         MatSnackBarModule,
         MatSelectModule,
         MatPaginatorModule,
+        MatListModule,
     ],
     declarations: [],
     providers: [],

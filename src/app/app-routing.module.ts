@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'user', component: UserComponent },
-  { path: 'tasks', component: TaskComponent },
   { path: 'tags', component: TagComponent },
 ];
 

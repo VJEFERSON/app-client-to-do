@@ -1,5 +1,5 @@
 export interface TagDto {
     id: number;
-    title: string;
+    tag: string;
     description: string;
 }
