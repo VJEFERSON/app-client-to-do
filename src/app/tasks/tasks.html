@@ -31,7 +31,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-3 mb-3">
     <div class="row">
         <div class="col-12">
             <ng-container *ngIf="getTasks() | async;">
@@ -42,9 +42,6 @@
                             <h4 mat-line>{{task.title}}</h4>
                             <button mat-icon-button (click)="taskDetails(task.id)" matTooltip="Details Task!">
                                 <mat-icon>more</mat-icon>
-                            </button>
-                            <button mat-icon-button matTooltip="Edit Task!">
-                                <mat-icon>subtitles</mat-icon>
                             </button>
                             <button mat-icon-button color="warn" matTooltip="Delete Task!">
                                 <mat-icon>delete</mat-icon>

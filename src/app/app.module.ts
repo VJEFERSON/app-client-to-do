@@ -10,6 +10,7 @@ import { RegisterModule } from './register/RegisterModule';
 import { UserModule } from './user/UserModule';
 import { TaskModule } from './tasks/TaskModule';
 import { TagModule } from './tags/TagModel';
+import { NavbarModule } from './navbar/NavbarModule';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TagModule } from './tags/TagModel';
     CommonMaterialModules,
     FormsModule,
     ReactiveFormsModule,
+    NavbarModule,
     LoginModule,
     RegisterModule,
     UserModule,

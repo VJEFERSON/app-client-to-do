@@ -19,7 +19,7 @@
                                     <input type="password" matInput placeholder="Password" 
                                     [(ngModel)]="user.password"  
                                     required                          
-                                    name="pasword">
+                                    name="password">
                                 </mat-form-field>
                             </div>
                         </div>
@@ -27,8 +27,10 @@
                     <mat-card-actions class="d-flex justify-content-center ">
                         <button mat-flat-button class="w-100" 
                             [disabled]="isLoading"
-                            (click)="onSubmit(form)"
-                            color="primary">Login</button>
+                            (click)="loginSubmit(form)"
+                            color="primary">LOGIN <i class="material-icons right">
+                                    send
+                                    </i></button>
                     </mat-card-actions>
                 </form>
                 <mat-progress-bar *ngIf="isLoading"  mode="indeterminate"></mat-progress-bar>
